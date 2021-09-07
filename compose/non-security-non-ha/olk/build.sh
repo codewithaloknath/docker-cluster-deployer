@@ -2,6 +2,7 @@
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 set -e
 cd $DIR
+source $DIR/../config
 mkdir -p $DIR/tmp/olk
 tar -xf $OLK_PACKAGE -C $DIR/tmp/olk --strip-components=1
 
