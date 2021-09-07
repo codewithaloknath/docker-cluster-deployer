@@ -14,6 +14,8 @@ BASE_IMAGE_NAME=hadoop
 TARGET_IMAGE_NAME="olk-${USER_NAME}:$OLK_VERSION"
 
 if [ "${EMBED_IN_SINGLE_CONTAINER}" == "true" ]; then
+   BASE_IMAGE_VERSION="${HIVE_VERSION}-${HADOOP_VERSION}"
+   BASE_IMAGE_NAME="hive-hadoop" 
    # In case of single container namenode's hostname and hive's hostname is different. provide them via jvm.config
    cp $DIR/etc/jvm-singlecontainer.config $DIR/tmp/olk/etc/jvm.config
 fi
