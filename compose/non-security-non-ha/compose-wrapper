@@ -13,7 +13,7 @@ fi
 
 COMPOSE_ARGS="-f ${BASE_COMPOSE_FILE}"
 
-if [ "${OLK_ENABLED}" == "true" ]; then
+if [ "${OLK_ENABLED}" == "true" ] && [ "${EMBED_IN_SINGLE_CONTAINER}" == "false" ]; then
    COMPOSE_ARGS="${COMPOSE_ARGS} -f docker-compose_olk.yaml"
 fi
 
