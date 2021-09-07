@@ -10,10 +10,10 @@ export GROUP_ID=$(id -g "${USER_NAME}")
 
 #Whether to run all services inside a single container.
 #If enabled, cannot scale datanodes to multiple instances if required.
-export EMBED_IN_SINGLE_CONTAINER=false
+export EMBED_IN_SINGLE_CONTAINER=true
 
 #Whether OLK should be enabled.
-export OLK_ENABLED=false
+export OLK_ENABLED=true
 
 ##### DONT CHANGE BELOW THIS #######
 export OLK_DEPENDENCY="hive"
