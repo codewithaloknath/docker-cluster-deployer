@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
 export HADOOP_VERSION=3.3.0
-export HADOOP_PACKAGE=/home/vinay/releases/hadoop-$HADOOP_VERSION/hadoop-$HADOOP_VERSION-RC0.tar.gz
-
 export DERBY_VERSION=10.10.2.0
-export DERBY_PACKAGE=/home/vinay/releases/db-derby-$DERBY_VERSION-bin.tar.gz
-
 export HIVE_VERSION=3.1.2
-export HIVE_PACKAGE=/home/vinay/releases/apache-hive-$HIVE_VERSION-bin.tar.gz
-
-export OLK_VERSION=1.4.0-SNAPSHOT
-export OLK_PACKAGE=/home/vinay/releases/hetu-server-$OLK_VERSION.tar.gz
+export OLK_VERSION=1.3.0
 
 export USER_NAME=${USER}
 export USER_ID=$(id -u "${USER_NAME}")
