@@ -20,7 +20,7 @@ services:
     user: ${USER}
     hostname: hive-hadoop
     container_name: hive-hadoop
-    command: ["new-start-services.sh"]
+    command: ["bash","/olk/bin/new-start-services.sh"]
     networks:
       - hadoop
     ports:
