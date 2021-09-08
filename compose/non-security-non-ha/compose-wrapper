@@ -8,7 +8,8 @@ BASE_COMPOSE_FILE="docker-compose.yaml"
 
 if [ "${EMBED_IN_SINGLE_CONTAINER}" == "true" ]; then
    # In case of single container hive needs both derby and hadoop
-   BASE_COMPOSE_FILE="docker-compose-olk-container.yaml"
+   #BASE_COMPOSE_FILE="docker-compose_single_container_hadoop.yaml"
+   BASE_COMPOSE_FILE="NEW-docker-compose-olk-setup.yaml"
 fi
 
 COMPOSE_ARGS="-f ${BASE_COMPOSE_FILE}"
