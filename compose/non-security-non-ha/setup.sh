@@ -8,6 +8,7 @@ cd ../hive/
 wget https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz
 
 cd ../olk/
+wget https://download.openlookeng.io/1.3.0/hetu-cli-1.3.0-executable.jar --no-check-certificate
 wget https://download.openlookeng.io/1.3.0/hetu-server-1.3.0.tar.gz --no-check-certificate
 
 cd ..
