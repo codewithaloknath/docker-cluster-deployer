@@ -6,7 +6,7 @@ source $DIR/../config
 mkdir -p $DIR/tmp/olk
 tar -xf $OLK_PACKAGE -C $DIR/tmp/olk --strip-components=1
 
-cp -r $DIR/utils/olk-start-services.sh $DIR/tmp/olk/bin
+cp -r $DIR/utils/new-start-services.sh $DIR/tmp/olk/bin
 cp -r $DIR/etc $DIR/tmp/olk/etc
 mkdir -p $DIR/tmp/olk/etc/dynamic/catalog
 
