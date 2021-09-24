@@ -5,7 +5,7 @@ There are two modes of starting these services.
 2. **Embeded container mode** : In this mode all above servies will be embeded into a single container. Embeded mode can be enabled by configuring `EMBED_IN_SINGLE_CONTAINER=true` in `config` file.
 
 # Pre Requisites
-1. Docker 
+1. Docker
 2. Docker compose
 
 # How to configure, build and start
